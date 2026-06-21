@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upper Body Growth Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<h1>💪 Upper Body Growth Tracker</h1>
+
+<div class="card">
+    <h2>Workout Hari Ini</h2>
+
+    <select id="workoutSelect">
+        <option>Upper A</option>
+        <option>Upper B</option>
+        <option>Legs</option>
+        <option>Upper C</option>
+        <option>Upper D</option>
+    </select>
+
+    <button onclick="loadWorkout()">Load Workout</button>
+</div>
+
+<div id="exerciseContainer"></div>
+
+<div class="card">
+    <h2>Rest Timer</h2>
+    <h3 id="timer">00:00</h3>
+    <button onclick="startRest(120)">Compound (120s)</button>
+    <button onclick="startRest(90)">Isolation (90s)</button>
+    <button onclick="startRest(60)">Quick (60s)</button>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
